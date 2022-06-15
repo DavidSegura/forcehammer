@@ -1,0 +1,73 @@
+.vertical-center {
+    min-height: 100%;
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-login{
+    position: relative;
+    z-index: 1;
+}
+.container-login .form-login{
+    background-color: var(--bg-color-white);
+    padding: 30px 30px 10px;
+    border: 1px solid #e7e7e7;
+}
+.container-login .form-login:before,
+.container-login .form-login:after{
+    content: '';
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #e7e7e7;
+    transform: rotate(3deg);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.container-login .form-login:after{ 
+    transform: rotate(-3deg);
+}
+.container-login .title{
+    color: #777;
+    font-size: 23px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 2px;
+    margin: 0 0 20px 0;
+}
+.form-login .form-group{
+    background-color: #eaeaea;
+    font-size: 0;
+    margin: 0 0 15px;
+    border: 1px solid #d1d1d1;
+    border-radius: 3px;
+}
+.form-login .form-control{
+    color: #555;
+    background-color: transparent;
+    font-size: 14px;
+    letter-spacing: 1px;
+    height: 40px;
+    padding: 0 20px;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    transition: all 0.3s;
+}
+.form-login .form-control::placeholder{
+    color: rgba(0,0,0,0.7);
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.form-login .btn{
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 5px 18px;
+    margin: 0 0 15px 0;
+    display: inline-block;
+}
