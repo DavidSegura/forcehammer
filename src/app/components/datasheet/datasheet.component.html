@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid justify-content-start">
+      <i class="bi bi-arrow-left icon-grey"></i>
+      <span class="navbar-text ps-3 navbar-title">Castellan</span>
+    </div>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12 p-0">
+            <div class="datasheet-image" style="background-image: url('assets/images/castellano.jpg');"></div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="table-responsive">
+            <table class="table table-sm datasheet">
+                <thead>
+                    <tr>
+                    <th>Castellano</th>
+                    <th class="text-end">75PT por modelo</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="2" class="p-0">
+                            <table class="table m-0 table-borderless table-sm align-middle table-inside-datasheet">
+                                <thead>
+                                    <tr>
+                                        <th *ngFor="let a of attrModel" class="col-1 text-center">{{a}}</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td *ngFor="let m of attrUnit" class="text-center">{{m}}</td>
+                                    </tr>
+                                    </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>        
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <h5>UNIT OPTIONS</h5>
+    <p> A Castellan is equipped with: bolt pistol; master-crafted auto bolt rifle; frag grenades; krak grenades.</p>
+</div>

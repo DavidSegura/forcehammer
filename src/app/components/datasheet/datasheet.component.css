@@ -1,0 +1,30 @@
+.datasheet-image{
+    height: 150px;
+    background-position: 50%;
+    background-size: cover; 
+}
+.table-responsive{
+    background-color: var(--bg-color-01);
+}
+table.datasheet{
+    color: var(--bg-color-white);
+    border: .5px solid white;
+    font-size: .8rem;
+    /*margin-top: -15px;
+    z-index: 10;
+    position: absolute;
+    max-width: 90%;
+    left: 5%;*/
+    margin-top: 10px;
+}
+table.datasheet > thead > tr th{
+    padding: 10px 20px;
+    background-color: var(--bg-color-02);
+}
+.table-inside-datasheet > thead > tr th{
+    background-color: var(--bg-color-03);
+    font-size: .7rem;
+}
+.table-inside-datasheet > tbody > tr td{
+    color: var(--bg-color-white);
+}

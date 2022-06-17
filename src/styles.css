@@ -3,6 +3,8 @@
     --bg-color-01: #1b1b1b;
     --border-color: #1c0a09;
     --icon-color: #909090;
+    --bg-color-02: #4e6c77;
+    --bg-color-03: #e1e5e6;
 }
 *{
     margin: 0;
@@ -10,6 +12,7 @@
 }
 html, body{
     background-color: var(--bg-color-01);
+    color: var(--bg-color-white);
 }
 .navbar-title{
     text-transform: uppercase;
@@ -30,4 +33,7 @@ li.list-group-item{
 .icon-grey{
     color: var(--icon-color);
     font-size: 1.2rem;
+}
+p{
+    font-size: .9rem;
 }
