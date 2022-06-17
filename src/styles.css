@@ -1,7 +1,33 @@
 :root {
     --bg-color-white: #fff;
+    --bg-color-01: #1b1b1b;
+    --border-color: #1c0a09;
+    --icon-color: #909090;
 }
 *{
     margin: 0;
     padding: 0;
+}
+html, body{
+    background-color: var(--bg-color-01);
+}
+.navbar-title{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--bg-color-white) !important;
+}
+li.list-group-item{
+    min-height: 60px;
+}
+li.list-group-item{
+    border-radius: 0rem !important;
+    border-bottom: 1px solid var(--border-color);
+}
+.list-group-item-dark {
+    color: var(--bg-color-white);
+    background-color: var(--bg-color-01);
+}
+.icon-grey{
+    color: var(--icon-color);
+    font-size: 1.2rem;
 }

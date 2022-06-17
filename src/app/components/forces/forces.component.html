@@ -1,6 +1,13 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid justify-content-start">
+    <i class="bi bi-arrow-left icon-grey"></i>
+    <span class="navbar-text ps-3 navbar-title">Forces</span>
+  </div>
+</nav>
+
 <ul class="list-group">
-    <li *ngFor="let f of forces" class="list-group-item d-flex justify-content-between align-items-center">
+    <li *ngFor="let f of forces" class="list-group-item d-flex justify-content-between align-items-center list-group-item-dark">
       {{f.name}}
-      <img src="assets/images/adeptas_sororitas.jpg" class="img-list">
+      <img src="assets/images/{{f.icon}}" class="img-list">
     </li>
 </ul>

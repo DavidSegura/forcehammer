@@ -9,7 +9,10 @@ export class ForcesComponent implements OnInit {
   public forces:Array<any>;
 
   constructor() { 
-    this.forces = new Array({"name": "Adepta Soronita"}, { "name": "Space Marines"}, { "name": "Grey Knights"});
+    this.forces = new Array(
+      { "name": "Adepta Soronita", "icon": "adeptas_sororitas.jpg" }, 
+      { "name": "Space Marines", "icon": "space_marines.jpg" }, 
+      { "name": "Grey Knights", "icon": "grey_knights.jpg" });
   }
 
   ngOnInit(): void {
