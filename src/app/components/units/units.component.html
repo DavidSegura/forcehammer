@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid justify-content-start">
+        <div class="row align-items-center justify-content-between w-100">
+            <div class="col-auto">
+                <i class="bi bi-arrow-left icon-grey"></i>
+                <span class="navbar-text ps-3 navbar-title">Units</span>
+            </div>
+            <div class="col-auto">
+                <div class="row g-3 align-items-center">
+                    <div class="col-auto">
+                        <i class="bi bi-search" (click)="ngFind()"></i>
+                    </div>
+                    <div class="col-auto p-0">
+                        <input type="text" name="find" id="find" class="form-control navbar-find" [(ngModel)]="find">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+  
+<ul class="list-group">
+    <li 
+    *ngFor="let f of forces | search: find" 
+    class="list-group-item d-flex justify-content-between align-items-center list-group-item-dark"
+    routerLink="/datasheet"
+    >
+    {{f.name}}
+    <img src="assets/images/{{f.icon}}" class="img-list">
+    </li>
+</ul>

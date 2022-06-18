@@ -34,6 +34,32 @@ li.list-group-item{
     color: var(--icon-color);
     font-size: 1.2rem;
 }
+.img-list{
+    clip-path: polygon(100% 0, 0 0, 10% 25%, 10% 75%, 0 100%, 100% 100%);
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
 p{
     font-size: .9rem;
+}
+input[type="text"]::placeholder.navbar-find{
+    color: rgba(0,0,0,0.7);
+    font-size: 14px;
+    text-transform: capitalize;
+}
+input[type="text"].navbar-find{
+    color: #555;
+    font-size: 14px;
+    letter-spacing: 1px;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    transition: all 0.3s;
+    width: 0;
+    padding: 0;
+}
+input[type="text"].navbar-find.show{
+    width: 200px;
+    padding: 0 20px;
 }

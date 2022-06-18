@@ -16,7 +16,6 @@ export class ForcesComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.table(this.forces);
   }
 
 }
