@@ -9,6 +9,7 @@ import { LoginComponent } from './components/login/login.component';
 import { ForcesComponent } from './components/forces/forces.component';
 import { DatasheetComponent } from './components/datasheet/datasheet.component';
 import { UnitsComponent } from './components/units/units.component';
+import { HomeComponent } from './components/home/home.component';
 
 // Services
 import { SearchPipe } from './pipes/search.pipe';
@@ -20,7 +21,8 @@ import { SearchPipe } from './pipes/search.pipe';
     ForcesComponent,
     DatasheetComponent,
     UnitsComponent,
-    SearchPipe
+    SearchPipe,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

@@ -5,6 +5,7 @@
     --icon-color: #909090;
     --bg-color-02: #4e6c77;
     --bg-color-03: #e1e5e6;
+    --bg-color-button: #212433;
 }
 *{
     margin: 0;
@@ -62,4 +63,13 @@ input[type="text"].navbar-find{
 input[type="text"].navbar-find.show{
     width: 200px;
     padding: 0 20px;
+}
+button.btn-force{
+    border-color: var(--border-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+button.btn-force:first-child{
+    background-image: url("assets/images/bg-eagle.png");
+    background-size: cover;
 }
